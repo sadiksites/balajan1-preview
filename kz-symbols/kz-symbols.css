@@ -1,0 +1,8 @@
+.kzs{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:start}
+.kzs article{background:#fff;border-radius:28px;padding:22px;box-shadow:0 6px 0 rgba(0,0,0,.05);min-width:0}
+.kzs h3{margin:12px 0 6px;font-size:20px}.kzs p{margin:0 0 8px;font-size:15px;line-height:1.55}
+.kzs-flag{width:100%;max-width:240px;aspect-ratio:2/1;object-fit:contain;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.kzs-emb{width:120px;height:120px}.kzs-note{font-size:64px;line-height:120px;height:120px}
+@media(min-width:900px){.kzs-an{grid-row:span 2}}
+.kzs details summary{cursor:pointer;font-weight:800;margin:6px 0}.kzs-st{margin:10px 0!important}
+.kzs-src{font-size:12px!important;opacity:.75;overflow-wrap:anywhere}
