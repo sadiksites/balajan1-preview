@@ -26,3 +26,11 @@ staff:[["Копешова Асель Берикбаевна","Копешова �
 docs:[["Жарғы","Устав"],["Лицензия","Лицензия"],["Күн тәртібі","Режим дня"],["Апталық ас мәзірі","Меню на неделю"],["Қаржылық есеп","Финансовый отчёт"]],
 contact:{phone:"8 72636 2-31-01",tel:"+77263623101",wa:"8 747 953 9342",watel:"77479539342",mail:"balajan1@mail.ru",ig:"_balajan_1_"}
 };
+(function(){
+ const K='bj1-lang';
+ window.L=()=>localStorage.getItem(K)==='ru'?1:0;
+ window.setLang=l=>{localStorage.setItem(K,l?'ru':'kk');document.documentElement.lang=l?'ru':'kk';window.render&&render();document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',(b.dataset.l==1)==!!l))};
+ window.T=k=>D.t[k][L()];
+ window.fmtDate=s=>{const m=[["қаңтар","сәуір"],[]];const d=new Date(s);return d.toLocaleDateString(L()?'ru-RU':'kk-KZ',{day:'numeric',month:'long',year:'numeric'})};
+ window.fitNav=(nav,cls)=>{const r=document.documentElement;r.classList.remove(cls);if(!nav)return;const k=[...nav.children];const top=k.length?k[0].offsetTop:0;if(k.some(e=>Math.abs(e.offsetTop-top)>4)||nav.scrollWidth>nav.clientWidth+1||document.documentElement.scrollWidth>innerWidth+1)r.classList.add(cls)};
+})();
