@@ -4,7 +4,7 @@ window.S={
  lang:()=>`<div class="lang" role="group" aria-label="Language"><button data-l="0" aria-pressed="${!L()}">KZ</button><button data-l="1" aria-pressed="${!!L()}">RU</button></div>`,
  title:id=>D.nav.find(n=>n[0]==id)[1+L()],
  feats:()=>(L()?D.t.fru:D.t.f).map((f,i)=>`<li><span class="fi">${['🗣️','🍲','📹','🎓','🇰🇿','🎯'][i]}</span><b>${f[0]}</b><span>${f[1]}</span></li>`).join(''),
- groups:()=>D.groups.map((g,i)=>`<li style="--c:${g[3]};--im:url(img/${['05','06','03'][i]}.jpg)"><span class="ge">${g[4]}</span><b>«${g[L()]}»</b><span>${D.gtype[i][L()]} · ${g[2]} ${T('age')}</span><span>${T('lang')}</span></li>`).join(''),
+ groups:()=>D.groups.map((g,i)=>`<li style="--c:${g[3]};--im:url(img/wa/${['13','17','15'][i]}.jpg?v=2)"><span class="ge">${g[4]}</span><b>«${g[L()]}»</b><span>${D.gtype[i][L()]} · ${g[2]} ${T('age')}</span><span>${T('lang')}</span></li>`).join(''),
  staff:()=>D.staff.map(s=>`<li><span class="phl dark">${T('photo')}</span><span class="av">${s[L()].split(' ').slice(0,2).map(w=>w[0]).join('')}</span><b>${s[L()]}</b><span>${s[2+L()]}</span></li>`).join(''),
  news:()=>D.news.map(n=>`<article><img src="${n[5]}" alt="" loading="lazy"><div><time>${fmtDate(n[0])}</time><h3>${n[1+L()]}</h3><p>${n[3+L()]}</p></div></article>`).join(''),
  docs:()=>D.docs.map(d=>`<li><a href="#docs" onclick="return false" aria-disabled="true">📄 ${d[L()]}</a><small>PDF</small></li>`).join(''),
