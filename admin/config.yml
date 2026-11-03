@@ -5,8 +5,8 @@ backend:
   branch: main
   auth_type: pkce
   base_url: https://auth.decapbridge.com
-  auth_endpoint: /sites/BALAJAN1_SITE_ID/pkce
-  auth_token_endpoint: /sites/BALAJAN1_SITE_ID/token
+  auth_endpoint: /sites/39685c46-c30e-480d-8422-21da7907c93f/pkce
+  auth_token_endpoint: /sites/39685c46-c30e-480d-8422-21da7907c93f/token
   gateway_url: https://gateway.decapbridge.com
   squash_merges: true
   commit_messages:
