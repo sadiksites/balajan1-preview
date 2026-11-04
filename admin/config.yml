@@ -21,9 +21,9 @@ auth:
   first_name_claim: first_name
   last_name_claim: last_name
   avatar_url_claim: avatar_url
-site_url: https://sadiksites.github.io/balajan1-preview/
-display_url: https://sadiksites.github.io/balajan1-preview/
-logo_url: https://sadiksites.github.io/balajan1-preview/logo.svg
+site_url: https://balajan1.edu.kz/
+display_url: https://balajan1.edu.kz/
+logo_url: https://balajan1.edu.kz/logo.svg
 media_folder: img/uploads
 public_folder: img/uploads
 collections:
